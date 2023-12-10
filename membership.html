@@ -1,0 +1,876 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BCHC: Membership </title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <style>
+        div.header {
+            background-image: url("./assets/images/header.jpg");
+        }
+    </style>
+    <body class="bg-body-background h-fit">
+        <header>
+            <!-- Heading Text -->
+            <h1 class="text-white text-4xl lg:text-6xl py-10 h-fit w-full text-center font-serif"> Backcountry Horsemen of California</h1>
+
+            <!-- Heading Image -->
+            <div class="header w-full h-[240px] lg:h-[480px]"></div>
+
+            <!-- Navigation Bar -->
+            <nav class="hidden lg:flex flex-col h-fit w-fit divide-y divide-black text-right absolute top-0 right-0">
+                <a href="./index.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Home </a>
+                <a href="./about-us.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> About Us </a>
+                <a href="./bchc-forms.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> BCHC Forms </a>
+                <a href="./bchc-offical-documents-and-policies.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> BCHC Official Documents <br> and Politices</a>
+                <a href="./backcountry-newsletter.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Backcountry Newsletter </a>
+                <a href="./educational-resources.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Educational Resources </a>
+                <a href="./grants.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Grants </a>
+                <a href="./intern-programs.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Intern Programs </a>
+                <a href="./leave-no-trace.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Leave No Trace </a>
+                <a href="./links.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Links </a>
+                <a href="./local-units.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Local Units </a>
+                <a href="./membership.html" class="text-black bg-gray-300 bg-opacity-90 py-1 px-3 hover:bg-body-background hover:text-gray-300"> Membership </a>
+                <a href="./public-lands.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Public Lands </a>
+                <a href="./rendezvous.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Rendezvous </a>
+                <a href="./saw-program.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Saw Program </a>
+                <a href="./volunteer-service-hours.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Volunteer Service Hours </a>
+                <a href="./wilderness-riders.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Wilderness Riders </a>
+                <a href="./youth-program.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Youth Program </a>
+                <a href="./photo-album.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Photo Album </a>
+                <a href="./contact-us.html" class="text-orange-text bg-body-background bg-opacity-90 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Contact Us </a>
+            </nav>
+
+            <!-- Small Device Nav Bar -->
+            <nav class="group lg:hidden flex flex-col items-center justify-center py-8">
+                <button class="h-full px-10 text-white text-5xl" title="View navigation">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </button>
+                <ul class="group-focus-within:flex hidden flex-col text-center text-lg text-orange-text w-full">
+                    <a href="./index.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Home </a>
+                    <a href="./about-us.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> About Us </a>
+                    <a href="./bchc-forms.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> BCHC Forms </a>
+                    <a href="./bchc-offical-documents-and-policies.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> BCHC Official Documents and Politices</a>
+                    <a href="./backcountry-newsletter.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Backcountry Newsletter </a>
+                    <a href="./educational-resources.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Educational Resources </a>
+                    <a href="./grants.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Grants </a>
+                    <a href="./intern-programs.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Intern Programs </a>
+                    <a href="./leave-no-trace.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Leave No Trace </a>
+                    <a href="./links.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Links </a>
+                    <a href="./local-units.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Local Units </a>
+                    <a href="./membership.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Membership </a>
+                    <a href="./public-lands.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Public Lands </a>
+                    <a href="./rendezvous.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Rendezvous </a>
+                    <a href="./saw-program.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Saw Program </a>
+                    <a href="./volunteer-service-hours.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Volunteer Service Hours </a>
+                    <a href="./wilderness-riders.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Wilderness Riders </a>
+                    <a href="./youth-program.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Youth Program </a>
+                    <a href="./photo-album.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Photo Album </a>
+                    <a href="./contact-us.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Contact Us </a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page Content -->
+        <div class="h-fit w-full">
+
+            <!-- Logo and Header -->
+            <!-- <div class="flex flex-col w-full h-fit lg:pt-10 justify-center items-center"> -->
+            <!--     <img class="px-4 h-[110px] lg:h-[200px] rounded-md" src="./assets/images/logos/HorsesLogoINVERTED.jpg" alt="BCHCalifornia Logo"> -->
+            <!-- </div> -->
+
+            <!-- Why Join? -->
+            <div class="w-full py-20 flex flex-col items-center justify-center text-center">
+                <h1 class="text-4xl text-white font-semibold">Why join Backcountry Horsemen of California?</h1>
+                <p class="text-white text-lg pt-6 w-1/2">
+                    Even if you don’t ride or aren’t an “active” member, your dues contribute to our cause! You’ll be helping pay for work projects, educational materials and training, insurances and you will help support our efforts to keep trails open to equestrians, hikers and more! 
+                    <br><br>
+                    As a member you will...
+                </p>
+                <ul class="text-black text-lg text-left w-1/2 list-disc h-fit bg-orange-text px-10 py-5 my-5">
+                    <li>Get to participate in state and unit activities and events</li>
+                    <li>Learn valuable backcountry skills and outdoor ethics</li>
+                    <li>Contribute to the appropriate use of public lands in California</li>
+                    <li>Make connections, friends, and network with members from all over the state</li>
+                    <li>Receive the BCHC newsletter</li>
+                    <li>Be kept up to date on public lands issues</li>
+                    <li>And more!</li>
+                </ul>
+                <p class="text-white text-lg py-4 w-1/2">
+                    Contact our Membership Coordinator, Chip Herzig. Chip will be happy to address any of your questions or concerns concerning membership.
+                </p>
+                <p class="text-white text-lg">
+                    <span class="text-xl font-semibold">BCHC Membership</span>
+                    <br>
+                    1280 State Rte 208
+                    <br>
+                    Yerington, NV 89447
+                    <br><br>
+                    E: <a class="hover:underline hover:text-blue-300" href="mailto:chipherzig@gmail.com">chipherzig@gmail.com</a>
+                    <br>
+                    P: <a class="hover:underline hover:text-blue-300" href="Tel: 755-463-3634"> (775) 463-3634 </a>
+                </p>
+            </div>
+
+            <!-- Unit Map & Unit list -->
+            <div class="w-full flex flex-col items-center justify-center">
+                <h1 class="text-4xl text-white font-semibold pb-4">California Unit Map</h1>
+                <p class="text-white text-lg pb-4"> All BCHC Units are members of <a class="underline hover:text-blue-300" href="https://www.bcha.org/" target="_blank">Back Country Horsemen of America</a>.</p>
+                <img src="./assets/images/UnitMap.png" alt="Map of BCHC units.">
+
+
+                <!-- Unit List Dropdowns -->
+                <div class="w-2/3 flex flex-col border border-orange-text rounded-md my-8">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('units');" class="flex items-center text-4xl bg-orange-text text-black p-3 rounded-md">
+                        <ion-icon id="unitsarrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Unit Information
+                    </button>
+                    <!-- Content -->
+                    <ul id="unitscontent" class="hidden flex-col items-center text-xl px-4 py-2">
+                        <!-- Antelope Valley Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub1');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub1arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Antelope Valley Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub1content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>P O Box 84, Pearblossom, CA 93553</li>
+                                    <li><a target="_blank" href="http://www.bchc-avunit.org/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/groups/328687220552083/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Eastern Sierra Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub2');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub2arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Eastern Sierra Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub2content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>17 Unit B Sunny Slope Road Tom’s Place, CA 93546</li>
+                                    <li><a target="_blank" href="" class="underline hover:text-blue-300">GET FACEBOOK LINK FOR THIS -> Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- High Country Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub3');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub3arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                High Country Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub3content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 270065, Susanville, California 96127-0002</li>
+                                    <li><a target="_blank" href="https://www.facebook.com/groups/170146466736818/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- High Sierra Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub4');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub4arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                High Sierra Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub4content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>P O Box 6632, Visalia CA 93290</li>
+                                    <li><a target="_blank" href="" class="underline hover:text-blue-300">GET FACEBOOK LINK FOR THIS -> Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Kern River Valley Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub5');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub5arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Kern River Valley Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub5content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>C/O Larry Cigainero, 3561 Jeffrey Street Lake Isabella, CA 93240</li>
+                                    <!-- Might have more, still waiting -->
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Kern Sierra Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub6');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub6arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Kern Sierra Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub6content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>16347 Stephenie Rd, Bakersfield CA 93314-9669</li>
+                                    <li><a target="_blank" href="https://bchckernsierra.com/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/Kernsierra/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Lake Mendo Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub7');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub7arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Lake Mendo Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub7content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 1674, Lakeport, CA 95453</li>
+                                    <li><a target="_blank" href="https://www.facebook.com/people/Backcountry-Horsemen-of-California-LakeMendo-Unit/100064754646787/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Los Padres Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub8');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub8arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Los Padres Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub8content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>7395 El Camino Rd #472, Atascadero, CA 93422</li>
+                                    <li><a target="_blank" href="https://www.facebook.com/bchclp/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Manzanita Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub9');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub9arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Manzanita Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub9content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>1124 3rd Street, Ramona, CA 92065</li>
+                                    <li><a target="_blank" href="https://www.facebook.com/people/Backcountry-Horsemen-of-California-LakeMendo-Unit/100064754646787/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Mid Valley Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub10');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub10arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Mid Valley Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub10content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 1709, Modesto CA 95353-1709</li>
+                                    <li><a target="_blank" href="http://www.bchcmidvalley.org/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/BCHCMV" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Mother Lode Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub11');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub11arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Mother Lode Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub11content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 2088, Elk Grove 95759-2088</li>
+                                    <li><a target="_blank" href="https://bchcmlu.org/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/bchcamotherlode/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- North Bay Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub12');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub12arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                North Bay Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub12content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>P.O. Box 9435, Santa Rosa CA 95405</li>
+                                    <li><a target="_blank" href="https://northbayunit.com/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="" class="underline hover:text-blue-300">FIND LINK FOR FACEBOOK -> Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Pacific Crest Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub13');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub13arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Pacific Crest Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub13content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 290786, Phelan, CA 92329</li>
+                                    <li><a target="_blank" href="https://www.facebook.com/groups/BackCountryHorsemenofCaliforniaPacificCrest/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Redshank Riders Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub14');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub14arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Redshank Riders Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub14content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 383, Aguanga CA 92536-0383</li>
+                                    <li><a target="_blank" href="http://www.redshankriders.com/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/RedshankRiders" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Redwood Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub15');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub15arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Redwood Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub15content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 6023, Eureka CA 95502-6023</li>
+                                    <li><a target="_blank" href="http://www.redwoodunit.com/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/pages/Backcountry-Horsemen-of-California-Redwood-Unit/100238493731" class="underline hover:text-blue-300">Facebook</a></li>
+                                    <li><a target="_blank" href="https://www.instagram.com/backcountryhorsemen_redwood/" class="underline hover:text-blue-300">Instagram</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- San Joqauin Sierra Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub16');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub16arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                San Joqauin Sierra Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub16content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 25693, Fresno CA 93729-5693</li>
+                                    <li><a target="_blank" href="http://bchcsjsu.org/index.html" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/groups/294724770580446/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Santa Ana River Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub17');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub17arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Santa Ana River Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub17content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>P.O. Box 306, Norco, CA 92860</li>
+                                    <li><a target="_blank" href="http://www.sarubchc.org/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/BackcountryHorsemanSantaAnaRiverUnit?ref=stream" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Sequoia Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub18');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub18arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Sequoia Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub18content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 456, Springville CA 93265</li>
+                                    <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100071306436069" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Shasta-Trinity Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub18');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub18arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Shasta-Trinity Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub18content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>20633 Gas Point Rd, Ste. B2, #48, Cottonwood, CA. 96022</li>
+                                    <li><a target="_blank" href="http://www.bchcshastatrinity.org/index.html" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/BCHCshastatrinity" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Sierra Freepackers Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub19');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub19arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Sierra Freepackers Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub19content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 64, Oakhurst CA 93644-0064</li>
+                                    <li><a target="_blank" href="http://www.sierrafreepackers.com/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F598387910171551%2F" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Sutter Buttes Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub20');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub20arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Sutter Buttes Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub20content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>P.O. Box 703, Chico, CA 95927</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Top of the State Unit -->
+                        <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                            <!-- Button -->
+                            <button onclick="toggleDropdown('unitsub21');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                                <ion-icon id="unitsub21arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                                Top of the State Unit
+                            </button>
+                            <!-- Content -->
+                            <div id="unitsub21content" class="hidden flex-col text-xl px-4 py-2">
+                                <ul class="py-1">
+                                    <li>PO Box 461, Etna CA 96027-0461</li>
+                                    <li><a target="_blank" href="https://www.tos-bchc.com/" class="underline hover:text-blue-300">Website</a></li>
+                                    <li><a target="_blank" href="https://www.facebook.com/bchctopofthestate/" class="underline hover:text-blue-300">Facebook</a></li>
+                                </ul>
+                            </div>
+                        </li>
+
+
+
+                    </ul>
+                </div>
+
+            </div>
+
+            <!-- 4 Dropdowns: Membership types, join/renew online, join/renew by main, membership data -->
+            <div class="w-full flex flex-col items-center justify-center py-20">
+                <h1 class="text-4xl text-white font-semibold pb-4">Membership Information</h1>
+                
+               <!-- Membership Types Dropdown -->
+               <div class="w-2/3 flex flex-col items-center justify-center my-4 border border-orange-text rounded-md">
+                   <button onclick="toggleDropdown('main1');"class="w-full flex items-center text-4xl bg-orange-text text-black p-3 rounded-md">
+                       <ion-icon id="main1arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                       Membership Types 
+                   </button>
+
+                   <!-- Membership Type Dropdowns -->
+                   <ul id="main1content" class="w-full flex-col items-center hidden text-4xl text-white p-3">
+                       <!-- Individual -->
+                       <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('sub1');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                               <ion-icon id="sub1arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               Individual
+                           </button>
+                           <!-- Content -->
+                           <div id="sub1content" class="hidden flex-col text-xl px-4 py-2">
+                               <p class="py-1">
+                                   Any man or woman may become an INDIVIDUAL type member of BCHC. This type is best for singles, or for persons whose family members may have other interests. Individual memberships have ONE vote during General Business meetings.
+                               </p>
+                               <ul class="py-1">
+                                   <li>1 Year Individual Membership $50.00 USD</li>
+                                   <li>2 Year Individual Membership $90.00 USD</li>
+                                   <li>3 Year Individual Membership $125.00 USD</li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- Family -->
+                       <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('sub2');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                               <ion-icon id="sub2arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               Family
+                           </button>
+                           <!-- Content -->
+                           <div id="sub2content" class="hidden flex-col text-xl px-4 py-2">
+                               <p class="py-1">
+                                   All immediate family members are included in Family (Shared) memberships, and are eligible to participate fully in BCHC and Local Unit activities; ONLY TWO adults from each Family (Shared) membership may vote during General Business meetings.
+                               </p>
+                               <ul class="py-1">
+                                   <li>1 Year Family Membership $60.00 USD</li>
+                                   <li>2 Year Family Membership $110.00 USD</li>
+                                   <li>3 Year Family Membership $150.00 USD</li>
+                               </ul>
+
+                               <p class="py-2 text-2xl">
+                                   Special Family Memberships
+                               </p>
+                               <ul class="py-1">
+                                   <li class="py-0.5"><span class="font-semibold">Benefactor: </span> A family membership, that includes a donation to BCHC and a special title. (1 Year $100.00 USD)</li>
+                                   <li class="py-0.5"><span class="font-semibold">Patron: </span> A family membership, that includes a donation to BCHC and a special title. (1 Year $250.00 USD)</li>
+                                   <li class="py-0.5"><span class="font-semibold">Mt Whitney: </span> In the state of California, Mt. Whitney is about as high as you can go and still have touch with the ground. It is that hint that gave a name to our Mt. Whitney membership type; this group contributes generously to our effort. A family membership, that include a donation to BCHC and a special title. (1 Year $500.00 USD)</li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- Young Adult -->
+                       <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('sub3');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                               <ion-icon id="sub3arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               Young Adult
+                           </button>
+                           <!-- Content -->
+                           <div id="sub3content" class="hidden flex-col text-xl px-4 py-2">
+                               <p class="py-1">
+                                   This is a membership for college aged individuals.
+                               </p>
+                               <ul class="py-1">
+                                   <li>1 Year Young Adult Membership $15.00 USD</li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- Youth -->
+                       <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('sub4');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                               <ion-icon id="sub4arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               Youth
+                           </button>
+                           <!-- Content -->
+                           <div id="sub4content" class="hidden flex-col text-xl px-4 py-2">
+                               <p class="py-1">
+                                   This is a membership for minors who wish to join BCHC, even though their family does not. Youth memberships must fill out additional paperwork, as well as find an approved adult member to designate as their guardian at BCHC events.
+                               </p>
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/membership/BCHCYouthMembershipBothForms.pdf" class="underline hover:text-blue-300">Additional Youth Forms</a></li>
+                                   <li>1 Year Youth Membership $15.00 USD</li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- Club -->
+                       <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('sub5');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                               <ion-icon id="sub5arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               Club
+                           </button>
+                           <!-- Content -->
+                           <div id="sub5content" class="hidden flex-col text-xl px-4 py-2">
+                               <p class="py-1">
+                                   Other clubs or organizations who want to receive BCHC newsletters and email announcements.
+                               </p>
+                               <ul class="py-1">
+                                   <li>1 Year Club Membership $60.00 USD</li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- Associate -->
+                       <li class="w-[95%] flex flex-col border border-orange-text rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('sub6');" class="flex items-center text-3xl bg-orange-text text-black p-2 rounded-md">
+                               <ion-icon id="sub6arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               Associate
+                           </button>
+                           <!-- Content -->
+                           <div id="sub6content" class="hidden flex-col text-xl px-4 py-2">
+                               <p class="py-1">
+                                   For current members wishing to join more than one unit. You can join as many additional units as you’d like.
+                               </p>
+                               <ul class="py-1">
+                                   <li>1 Year Associate Membership $15.00 USD</li>
+                               </ul>
+                           </div>
+                       </li>
+                   </ul>
+               </div>
+
+               <!-- Join or Renew ONLINE Dropdown -->
+               <div class="w-2/3 flex flex-col items-center justify-center my-4 border border-orange-text rounded-md">
+                   <button onclick="toggleDropdown('main2');" class="w-full flex items-center text-4xl bg-orange-text text-black p-3 rounded-md">
+                       <ion-icon id="main2arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Join BCHC or Renew your Membership Online:
+                   </button>
+
+                   <ul id="main2content" class="flex-col hidden w-full text-2xl text-white p-3">
+                       <li class="py-2">
+                           1. Fill out the 
+                           <a class="underline hover:text-blue-300" target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLScMh1SY3t02S_SfNis2pd0mG31wSxumqKYn3JANscqK3wHElQ/viewform">
+                               ONLINE MEMBERSHIP FORM</a>
+                            , save it & print a copy for your records.
+                       </li>
+                       <li class="py-2">
+                           2. Sumbit the online form. A copy will be sent to Chip Herzig. 
+                           IMPORTANT: Youth Membershhips MUST also print, sign, and mail 
+                           <a class="underline hover:text-blue-300" target="_blank" href="./public/documents/membership/BCHCYouthMembershipPermissionRelease.pdf">this form.</a> 
+                           Youth memberships will NOT be valid until the forms are received.
+                       </li>
+                       <li class="py-2">
+                           3. Pay with your Paypal:
+                           <form class="my-2" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                               <input type="hidden" name="cmd" value="_s-xclick">
+                               <input type="hidden" name="hosted_button_id" value="M7K2WPBUMXQMC">
+                               <table>
+                                   <tr>
+                                       <td>
+                                           <input type="hidden" name="on0" value="Membership Type">Membership Type
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <select name="os0" class="my-2 px-3 py-1.5 bg-body-background-light">
+                                               <option value="Individual">Individual $50.00 USD</option>
+                                               <option value="Family">Family/Club $60.00 USD</option>
+                                               <option value="2 Year Individual">2 Year Individual $90.00 USD</option>
+                                               <option value="2 Year Family">2 Year Family $110.00 USD</option>
+                                               <option value="3 Year Individual">3 Year Individual $125.00 USD</option>
+                                               <option value="3 Year Family">3 Year Family $150.00 USD</option>
+                                               <option value="Young Adult/Associate">Young Adult/Associate $15.00 USD</option>
+                                               <option value="Benefactor">Benefactor $100.00 USD</option>
+                                               <option value="Patron">Patron $250.00 USD</option>
+                                               <option value="Mt Whitney">Mt Whitney $500.00 USD</option>
+                                           </select>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <input type="hidden" name="on1" value="Membership">Membership
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <select name="os1" class="my-2 px-3 py-1.5 bg-body-background-light">
+                                               <option value="New">New </option>
+                                               <option value="Renewal">Renewal </option>
+                                           </select>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <input type="hidden" name="on2" value="Membership form sent in via:">Membership form sent in via:
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <select name="os2" class="my-2 px-3 py-1.5 bg-body-background-light">
+                                               <option value="Email">Email </option>
+                                               <option value="US Mail">US Mail </option>
+                                           </select>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <input type="hidden" name="on3" value="Unit">Unit
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <select name="os3" class="my-2 px-3 py-1.5 bg-body-background-light">
+                                               <option value="Antelope Valley">Antelope Valley </option>
+                                               <option value="Eastern Sierra">Eastern Sierra </option>
+                                               <option value="High Country">High Country </option>
+                                               <option value="High Sierra">High Sierra </option>
+                                               <option value="Kern River Valley">Kern River Valley </option>
+                                               <option value="Kern Sierra">Kern Sierra </option>
+                                               <option value="Lake Mendo">Lake Mendo </option>
+                                               <option value="Los Padres">Los Padres </option>
+                                               <option value="Manzanita Riders">Manzanita Riders </option>
+                                               <option value="Mid Valley">Mid Valley </option>
+                                               <option value="Mother Lode">Mother Lode </option>
+                                               <option value="North Bay">North Bay </option>
+                                               <option value="Pacific Crest">Pacific Crest </option>
+                                               <option value="Redshank Riders">Redshank Riders </option>
+                                               <option value="Redwood">Redwood </option>
+                                               <option value="San Joaquin Sierra">San Joaquin Sierra </option>
+                                               <option value="Santa Ana River">Santa Ana River </option>
+                                               <option value="Sequoia">Sequoia </option>
+                                               <option value="Shasta-Trinity">Shasta-Trinity </option>
+                                               <option value="Sierra Freepackers">Sierra Freepackers </option>
+                                               <option value="Sutter Buttes">Sutter Buttes </option>
+                                               <option value="Top of the State">Top of the State </option>
+                                           </select>
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <input type="hidden" name="on4" value="Phone Number">Phone Number
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <input type="text" name="os4" class="my-2 px-3 py-1.5 bg-body-background-light" maxlength="200">
+                                       </td>
+                                   </tr>
+                                   <tr>
+                                       <td>
+                                           <p class="my-2 text-md italic">*Paypal is the only acceptable form of online payment.</p>
+                                       </td>
+                                   </tr>
+                               </table>
+                               <input type="hidden" name="currency_code" value="USD">
+                               <button type="submit" class="my-2 px-3 py-1.5 bg-orange-text rounded-md hover:bg-orange-700 transition-all">
+                                   Buy Now
+                               </button>
+                               <img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+                           </form>
+                       </li>
+                   </ul>
+               </div>
+
+               <!-- Join or Renew BY MAIL Dropdown -->
+               <div class="w-2/3 flex flex-col items-center justify-center my-4 border border-orange-text rounded-md">
+                   <button onclick="toggleDropdown('main3');" class="w-full flex items-center text-4xl bg-orange-text text-black p-3 rounded-md">
+                       <ion-icon id="main3arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Join BCHC or Renew your Membership By US Mail:
+                   </button>
+
+                   <ul id="main3content" class="flex-col hidden w-full text-2xl text-white p-3">
+                       <li class="py-2">
+                           1. Fill out the 
+                           <a class="underline hover:text-blue-300" target="_blank" href="./public/documents/membership/MemebrshipApplication2023.pdf">
+                               MEMBERSHIP FORM</a>
+                           & make a copy for your records.
+                           IMPORTANT: Youth Memberships MUST also print, sign, and mail
+                           <a class="underline hover:text-blue-300" target="_blank" href="./public/documents/membership/BCHCYouthMembershipBothForms.pdf">
+                               these forms.</a>
+                           Youth memberships will NOT be valid until the forms are received.
+                       </li>
+                       <li class="py-2">
+                           2. Mail the completed form(s) and check* to:<br>
+                           Chip Herzig<br>
+                           BCHC Membership<br>
+                           1280 State Rte 208<br>
+                           Yerington, NV 89447
+                       </li>
+                       <li class="py-2 italic">
+                           *Please make checks payable to Backcountry Horsemen of California. You may also pay via Paypal.
+                       </li>
+                   </ul>
+               </div>
+
+               <!-- Membership Data Dropdown -->
+               <div class="w-2/3 flex flex-col items-center justify-center my-4 border border-orange-text rounded-md">
+                   <button onclick="toggleDropdown('main4');" class="w-full flex items-center text-4xl bg-orange-text text-black p-3 rounded-md">
+                       <ion-icon id="main4arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                       Membership Data
+                   </button>
+
+                   <ul id="main4content" class="flex-col hidden text-4xl text-white p-3">
+                       <li> Enter content here </li>
+                   </ul>
+               </div>
+            </div>
+
+
+            <!-- Reminder Section -->
+            <div class="w-full flex flex-col items-center justify-center pb-20">
+                <h1 class="text-4xl text-white font-semibold pb-8">Notices & Reminders</h1>
+
+                <!-- Reminder Boxes -->
+                <div class="flex items-start justify-center text-white text-lg">
+                    <div class="p-4 mx-4 w-1/4">
+                        <p>
+                            1.  Send your membership renewals to VP of Membership Chip Herzig.  DO NOT SEND THEM TO BCHA. Sending to the wrong place will delay payment and cause your membership to show as expired so you cannot participate in unit events.
+                        </p>
+                    </div>
+                    <div class="p-4 mx-4 w-1/4">
+                        <p>
+                            2.   If you are paying for a membership that is not your own, notify the VP of Membership at time of payment.  (PayPal does not have an option to attach a message when units or individuals pay for someone else’s membership.)
+                        </p>
+                    </div>
+                    <div class="p-4 mx-4 w-1/4">
+                        <p>
+                            3.  The BCHC Executive Committee no longer sends out membership renewal verification "green slips" via regular mail.  Instead, each unit president and membership chair is sent a personal email from the BCHC VP of Membership (Chip Herzig) with each units' data AND the membership data will be posted on the BCHC web page in the password protected section. 
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+        <footer class="w-full h-fit mt-20">
+            <!-- Info Boxes -->
+            <div class="flex h-fit lg:h-[275px] flex-col lg:flex-row items-center lg:justify-evenly">
+                <!-- Info Box One -->
+                <div class="lg:h-full my-4 lg:my-0 w-4/5 lg:w-1/5 border border-white text-white p-5">
+                    <h1 class="text-2xl font-semibold"> Backcountry Horsemen of California</h1>
+                    <p class="py-3">To improve and promote the use, care and development of California backcountry trails and campsites, and to advocate good trail manners.</p>
+                    <div class="flex items-center w-full">
+                        <a href="./membership.html">
+                            <button class="text-lg bg-orange-text px-3 py-1.5 rounded-md">
+                                Join Now 
+                            </button>
+                        </a>
+                        <a class="text-2xl px-3 ml-auto" href="https://www.instagram.com/backcountry_horsemen_of_ca/" target="_blank" title="View our Instgram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a class="text-2xl mr-5" href="https://www.facebook.com/BackcountryHorsemenofCalifornia/" target="_blank" title="View our FaceBook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+                <!-- Info Box Two -->
+                <div class="lg:h-full my-4 lg:my-0 w-4/5 lg:w-1/5 border border-white text-white p-5">
+                    <h1 class="text-2xl font-semibold">California Non-Profit</h1>
+                    <p class="py-4">BCHC Education Fund Inc. is a 501C3 charitable organization as such all donations are tax deductible and greatly appreciated.</p>
+                    <a href="./not-found.html">
+                        <button class="text-lg bg-orange-text px-3 py-1.5 rounded-md mt-12">
+                            Donate
+                        </button>
+                    </a>
+                </div>
+            </div>
+            <img class="h-[150px] lg:h-[250px] mx-auto lg:mt-10" src="./assets/images/logos/Footer.png">
+        </footer>
+
+        <script>
+            function toggleDropdown (id) {
+                const content = document.getElementById(id + "content");
+                const arrow = document.getElementById(id + "arrow");
+
+                arrow.classList.contains("rotate-90") ? arrow.classList.remove("rotate-90") : arrow.classList.add("rotate-90");
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                    content.classList.add("flex");
+                } else {
+                    content.classList.remove("flex");
+                    content.classList.add("hidden");
+                }
+            }
+        </script>
+
+
+        <!-- External Scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
