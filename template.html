@@ -45,11 +45,11 @@
             </nav>
 
             <!-- Small Device Nav Bar -->
-            <nav class="group lg:hidden flex flex-col items-center justify-center py-8">
-                <button class="h-full px-10 text-white text-5xl" title="View navigation">
+            <nav class="lg:hidden flex flex-col items-center justify-center py-8">
+                <button onclick="toggleDropdown('navigation');" class="w-full h-full px-10 text-white text-5xl" title="View navigation">
                     <ion-icon name="menu-outline"></ionicon>
                 </button>
-                <ul class="group-focus-within:flex hidden flex-col text-center text-lg text-orange-text w-full">
+                <ul id="navigationcontent" class="hidden flex-col text-center text-lg text-orange-text w-full">
                     <!-- <a href="" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> SELECTED PAGE</a> -->
 
                     <a href="./index.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Home </a>
@@ -124,6 +124,22 @@
             <img class="h-[150px] lg:h-[250px] mx-auto lg:mt-10" src="./assets/images/logos/Footer.png">
 
         </footer>
+
+        <script>
+            function toggleDropdown (id) {
+                const content = document.getElementById(id + "content");
+                const arrow = document.getElementById(id + "arrow");
+
+                arrow != null ? arrow.classList.contains("rotate-90") ? arrow.classList.remove("rotate-90") : arrow.classList.add("rotate-90") : "";
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                    content.classList.add("flex");
+                } else {
+                    content.classList.remove("flex");
+                    content.classList.add("hidden");
+                }
+            }
+        </script>
 
 
         <!-- External Scripts -->

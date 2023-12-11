@@ -44,11 +44,11 @@
             </nav>
 
             <!-- Small Device Nav Bar -->
-            <nav class="group lg:hidden flex flex-col items-center justify-center py-8">
-                <button class="h-full px-10 text-white text-5xl" title="View navigation">
-                    <ion-icon name="menu-outline"></ion-icon>
+            <nav class="lg:hidden flex flex-col items-center justify-center py-8">
+                <button onclick="toggleDropdown('navigation');" class="w-full h-full px-10 text-white text-5xl" title="View navigation">
+                    <ion-icon name="menu-outline"></ionicon>
                 </button>
-                <ul class="group-focus-within:flex hidden flex-col text-center text-lg text-orange-text w-full">
+                <ul id="navigationcontent" class="hidden flex-col text-center text-lg text-orange-text w-full">
                     <a href="./index.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> Home </a>
                     <a href="./about-us.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> About Us </a>
                     <a href="./bchc-forms.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-90 hover:text-black"> BCHC Forms </a>
@@ -857,7 +857,7 @@
                 const content = document.getElementById(id + "content");
                 const arrow = document.getElementById(id + "arrow");
 
-                arrow.classList.contains("rotate-90") ? arrow.classList.remove("rotate-90") : arrow.classList.add("rotate-90");
+                arrow != null ? arrow.classList.contains("rotate-90") ? arrow.classList.remove("rotate-90") : arrow.classList.add("rotate-90") : "";
                 if (content.classList.contains("hidden")) {
                     content.classList.remove("hidden");
                     content.classList.add("flex");
