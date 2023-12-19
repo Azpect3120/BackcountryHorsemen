@@ -1012,8 +1012,29 @@ video {
     height: 175px;
   }
 
+  .md\:h-\[120px\] {
+    height: 120px;
+  }
+
+  .md\:h-\[480px\] {
+    height: 480px;
+  }
+
   .md\:w-\[726px\] {
     width: 726px;
+  }
+
+  .md\:w-\[480px\] {
+    width: 480px;
+  }
+
+  .md\:w-full {
+    width: 100%;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:text-xl {
