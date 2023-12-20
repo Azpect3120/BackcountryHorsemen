@@ -8,6 +8,8 @@ module.exports = {
         "body-background-light": "#212020",
         "orange-text": "#f27a24",
         "yellow-text": "#faf20a",
+        "almond": "#EED9C4",
+        "tuscan": "#FAD6A5",
       },
     },
     fontFamily: {

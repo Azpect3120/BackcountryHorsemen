@@ -702,14 +702,24 @@ video {
   border-width: 1px;
 }
 
-.border-orange-text {
+.border-almond {
   --tw-border-opacity: 1;
-  border-color: rgb(242 122 36 / var(--tw-border-opacity));
+  border-color: rgb(238 217 196 / var(--tw-border-opacity));
 }
 
 .border-white {
   --tw-border-opacity: 1;
   border-color: rgb(255 255 255 / var(--tw-border-opacity));
+}
+
+.border-tuscan {
+  --tw-border-opacity: 1;
+  border-color: rgb(250 214 165 / var(--tw-border-opacity));
+}
+
+.bg-almond {
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 217 196 / var(--tw-bg-opacity));
 }
 
 .bg-body-background {
@@ -730,6 +740,11 @@ video {
 .bg-orange-text {
   --tw-bg-opacity: 1;
   background-color: rgb(242 122 36 / var(--tw-bg-opacity));
+}
+
+.bg-tuscan {
+  --tw-bg-opacity: 1;
+  background-color: rgb(250 214 165 / var(--tw-bg-opacity));
 }
 
 .bg-opacity-80 {
@@ -942,6 +957,11 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+.text-tuscan {
+  --tw-text-opacity: 1;
+  color: rgb(250 214 165 / var(--tw-text-opacity));
+}
+
 .underline {
   text-decoration-line: underline;
 }
@@ -995,41 +1015,17 @@ video {
   text-decoration-line: underline;
 }
 
-.group:focus-within .group-focus-within\:flex {
-  display: flex;
-}
-
 @media (min-width: 768px) {
-  .md\:h-\[410px\] {
-    height: 410px;
-  }
-
-  .md\:h-\[200px\] {
-    height: 200px;
-  }
-
   .md\:h-\[175px\] {
     height: 175px;
   }
 
-  .md\:h-\[120px\] {
-    height: 120px;
-  }
-
-  .md\:h-\[480px\] {
-    height: 480px;
+  .md\:h-\[410px\] {
+    height: 410px;
   }
 
   .md\:w-\[726px\] {
     width: 726px;
-  }
-
-  .md\:w-\[480px\] {
-    width: 480px;
-  }
-
-  .md\:w-full {
-    width: 100%;
   }
 
   .md\:py-6 {
@@ -1037,9 +1033,14 @@ video {
     padding-bottom: 1.5rem;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:text-2xl {
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
   .md\:text-4xl {
@@ -1047,19 +1048,9 @@ video {
     line-height: 2.5rem;
   }
 
-  .md\:text-2xl {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
-  .md\:text-6xl {
-    font-size: 3.75rem;
-    line-height: 1;
-  }
-
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 
