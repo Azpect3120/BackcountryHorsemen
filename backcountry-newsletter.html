@@ -1,0 +1,425 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BCHC: Newsletter </title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <style>
+        div.header {
+            background-image: url("./assets/images/header.jpg");
+        }
+    </style>
+    <body class="bg-body-background h-fit">
+        <header>
+            <!-- Heading Text -->
+            <h1 class="text-white text-4xl lg:text-6xl py-10 h-fit w-full text-center font-serif"> Backcountry Horsemen of California</h1>
+
+            <!-- Heading Image -->
+            <div class="header w-full h-[240px] lg:h-[480px]"></div>
+
+            <!-- Navigation Bar -->
+            <nav class="hidden lg:flex flex-col h-fit w-fit divide-y divide-black text-lg text-right absolute top-0 right-0">
+                <a href="./index.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Home </a>
+                <a href="./about-us.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> About Us </a>
+                <a href="./bchc-forms.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> BCHC Forms </a>
+                <a href="./bchc-offical-documents-and-policies.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> BCHC Official Documents <br> and Politices</a>
+                <a href="./backcountry-newsletter.html" class="text-black bg-gray-300 bg-opacity-80 py-1 px-3 hover:bg-body-background hover:text-gray-300"> Backcountry Newsletter </a>
+                <a href="./educational-resources.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Educational Resources </a>
+                <a href="./grants.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Grants </a>
+                <a href="./intern-programs.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Intern Programs </a>
+                <a href="./leave-no-trace.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Leave No Trace </a>
+                <a href="./links.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Links </a>
+                <a href="./local-units.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Local Units </a>
+                <a href="./membership.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Membership </a>
+                <a href="./public-lands.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Public Lands </a>
+                <a href="./rendezvous.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Rendezvous </a>
+                <a href="./saw-program.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Saw Program </a>
+                <a href="./volunteer-service-hours.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Volunteer Service Hours </a>
+                <a href="./wilderness-riders.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Wilderness Riders </a>
+                <a href="./youth-program.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Youth Program </a>
+                <a href="./photo-album.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Photo Album </a>
+                <a href="./contact-us.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Contact Us </a>
+            </nav>
+
+            <!-- Small Device Nav Bar -->
+            <nav class="lg:hidden flex flex-col items-center justify-center py-8">
+                <button onclick="toggleDropdown('navigation');" class="w-full h-full px-10 text-white text-5xl" title="View navigation">
+                    <ion-icon name="menu-outline"></ionicon>
+                </button>
+                <ul id="navigationcontent" class="hidden flex-col text-center md:text-2xl text-lg text-orange-text w-full">
+                    <a href="./index.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Home </a>
+                    <a href="./about-us.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> About Us </a>
+                    <a href="./bchc-forms.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> BCHC Forms </a>
+                    <a href="./bchc-offical-documents-and-policies.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> BCHC Official Documents and Politices</a>
+                    <a href="./backcountry-newsletter.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Backcountry Newsletter </a>
+                    <a href="./educational-resources.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Educational Resources </a>
+                    <a href="./grants.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Grants </a>
+                    <a href="./intern-programs.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Intern Programs </a>
+                    <a href="./leave-no-trace.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Leave No Trace </a>
+                    <a href="./links.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Links </a>
+                    <a href="./local-units.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Local Units </a>
+                    <a href="./membership.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Membership </a>
+                    <a href="./public-lands.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Public Lands </a>
+                    <a href="./rendezvous.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Rendezvous </a>
+                    <a href="./saw-program.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Saw Program </a>
+                    <a href="./volunteer-service-hours.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Volunteer Service Hours </a>
+                    <a href="./wilderness-riders.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Wilderness Riders </a>
+                    <a href="./youth-program.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Youth Program </a>
+                    <a href="./photo-album.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Photo Album </a>
+                    <a href="./contact-us.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Contact Us </a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page Content -->
+        <div class="h-fit w-full">
+
+            <!-- Logo and Header -->
+            <div class="flex flex-col w-full h-fit lg:pt-10 justify-center items-center">
+                <!-- <img class="px-4 h-[110px] lg:h-[200px] rounded-md" src="./assets/images/logos/HorsesLogoINVERTED.jpg" alt="BCHCalifornia Logo"> -->
+            </div>
+
+            <!-- Heading Text -->
+            <div class="w-full flex flex-col items-center justify-center md:px-6 px-4 lg:px-0 py-16">
+                <h1 class="text-white text-4xl lg:text-5xl py-4 font-semibold"> Newsletters </h1>
+                <p class="text-white w-full lg:w-1/2 text-2xl py-3">
+                    Backcountry News is the quarterly publication of Backcountry Horsemen of California. Annual subscription is free for BCHC members. Annual digital and print subscriptions are $15 per year for non-members. One free digital issue may be provided upon request.
+                    <br><br>
+                    Advertisers: Rates are reasonable and target a concentrated equestrian group. All ads must be paid in advance. Contact the 
+                    <a class="underline hover:text-blue-300" href="mailto:bchcnewsletter@gmail.com">
+                        newsletter editor
+                    </a>
+                    for more information.
+                    <br><br>
+                    In our best efforts to go green and Leave No Trace, past editions are posted on this website.
+                    <br><br>
+                    If you would like to help BCHC save postage and printing costs by receiving a digital subscription, please send your email address to: BCHC VP of Membership
+                    (<a class="underline hover:text-blue-300" href="mailto:chipherzig@gmail.com">chipherzig@gmail.com</a>). He will email a link to the electronic newsletter when it becomes available.
+                </p>
+            </div>
+                   <ul id="main1content" class="w-full flex flex-col justify-center items-center text-3xl lg:text-4xl text-white p-3">
+                        <h1 class="text-white text-2xl lg:text-3xl py-4 font-semibold"> Past Editions of the Backcountry News, 2009 to Date </h1>
+                       <!-- 2023 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2023');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2023arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2023
+                           </button>
+                           <!-- Content -->
+                           <div id="2023content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2023.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2022 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2022');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2022arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2022
+                           </button>
+                           <!-- Content -->
+                           <div id="2022content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2022.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSummer2022.pdf" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpring2022.pdf" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2022.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2021 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2021');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2021arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2021
+                           </button>
+                           <!-- Content -->
+                           <div id="2021content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2021.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSummer2021.pdf" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpring2021.pdf" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2021.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2020 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2020');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2020arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2020
+                           </button>
+                           <!-- Content -->
+                           <div id="2020content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2020.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSummer2020.pdf" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2020.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2019 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2019');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2019arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2019
+                           </button>
+                           <!-- Content -->
+                           <div id="2019content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpring2019.pdf" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2019.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2018 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2018');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2018arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2018
+                           </button>
+                           <!-- Content -->
+                           <div id="2018content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2018.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSummer2018.pdf" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpring2018.pdf" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2018.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2017 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2017');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2017arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2017
+                           </button>
+                           <!-- Content -->
+                           <div id="2017content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2017.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSummer2017.pdf" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpring2017.pdf" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2017.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2016 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2016');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2016arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2016
+                           </button>
+                           <!-- Content -->
+                           <div id="2016content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2016.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSummer2016.pdf" class="underline hover:text-blue-300">Summer</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpring2016.pdf" class="underline hover:text-blue-300">Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2016.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2015 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2015');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2015arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2015
+                           </button>
+                           <!-- Content -->
+                           <div id="2015content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2015.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpringSummer2015.pdf" class="underline hover:text-blue-300">Summer/Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2015.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2014 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2014');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2014arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2014
+                           </button>
+                           <!-- Content -->
+                           <div id="2014content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2014.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpringSummer2014.pdf" class="underline hover:text-blue-300">Summer/Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2014.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+
+                       <!-- 2013 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2013');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2013arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2013
+                           </button>
+                           <!-- Content -->
+                           <div id="2013content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2013.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpringSummer2013.pdf" class="underline hover:text-blue-300">Summer/Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2013.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+
+                       <!-- 2012 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2012');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2012arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2012
+                           </button>
+                           <!-- Content -->
+                           <div id="2012content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2012.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpringSummer2012.pdf" class="underline hover:text-blue-300">Summer/Spring</a></li>
+                               <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2012.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+
+                       <!-- 2011 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2011');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2011arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2011
+                           </button>
+                           <!-- Content -->
+                           <div id="2011content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2011.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpringSummer2011.pdf" class="underline hover:text-blue-300">Summer/Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2011.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+
+                       <!-- 2010 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2010');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2010arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2010
+                           </button>
+                           <!-- Content -->
+                           <div id="2010content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2010.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpringSummer2010.pdf" class="underline hover:text-blue-300">Summer/Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2010.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+                       <!-- 2009 -->
+                       <li class="w-1/2 flex flex-col border border-tuscan rounded-md my-2">
+                           <!-- Button -->
+                           <button onclick="toggleDropdown('2009');" class="flex items-center text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                               <ion-icon id="2009arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                               2009
+                           </button>
+                           <!-- Content -->
+                           <div id="2009content" class="hidden flex-col text-base md:text-xl lg:text-2xl px-4 py-2">
+                               <ul class="py-1">
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsFall2009.pdf" class="underline hover:text-blue-300">Fall</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsSpringSummer2009.pdf" class="underline hover:text-blue-300">Summer/Spring</a></li>
+                                   <li><a target="_blank" href="./public/documents/newsletters/NewsWinter2009.pdf" class="underline hover:text-blue-300">Winter</a></li>
+                               </ul>
+                           </div>
+                       </li>
+
+
+
+
+            </ul>
+
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w-full h-fit mt-20">
+            <!-- Info Boxes -->
+            <div class="flex h-fit lg:h-[275px] flex-col lg:flex-row items-center lg:justify-evenly">
+                <!-- Info Box One -->
+                <div class="lg:h-full my-4 lg:my-0 w-4/5 lg:w-1/5 border border-white text-white p-5">
+                    <h1 class="md:text-3xl text-2xl font-semibold"> Backcountry Horsemen of California</h1>
+                    <p class="py-3 md:text-xl text-lg">To improve and promote the use, care and development of California backcountry trails and campsites, and to advocate good trail manners.</p>
+                    <div class="flex items-center w-full">
+                        <a href="./membership.html">
+                            <button class="md:text-xl text-lg bg-orange-text px-3 py-1.5 rounded-md">
+                                Join Now 
+                            </button>
+                        </a>
+                        <a class="md:text-3xl text-2xl px-3 ml-auto" href="https://www.instagram.com/backcountry_horsemen_of_ca/" target="_blank" title="View our Instgram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a class="md:text-3xl text-2xl mr-5" href="https://www.facebook.com/BackcountryHorsemenofCalifornia/" target="_blank" title="View our FaceBook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Info Box Two -->
+                <div class="lg:h-full my-4 lg:my-0 w-4/5 lg:w-1/5 border border-white text-white p-5">
+                    <h1 class="md:text-3xl text-2xl font-semibold">California Non-Profit</h1>
+                    <p class="py-4 md:text-xl text-lg">BCHC Education Fund, Inc. is a 501C3 charitable organization. Donations to this fund are tax deductible and greatly appreciated.</p>
+                    <a href="./not-found.html">
+                        <button class="md:text-xl text-lg bg-orange-text px-3 py-1.5 rounded-md mt-6">
+                            Donate
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <img class="h-[150px] md:h-[175px] lg:h-[250px] mx-auto lg:mt-10" src="./assets/images/logos/Footer.png">
+
+        </footer>
+
+        <script>
+            function toggleDropdown (id) {
+                const content = document.getElementById(id + "content");
+                const arrow = document.getElementById(id + "arrow");
+
+                arrow != null ? arrow.classList.contains("rotate-90") ? arrow.classList.remove("rotate-90") : arrow.classList.add("rotate-90") : "";
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                    content.classList.add("flex");
+                } else {
+                    content.classList.remove("flex");
+                    content.classList.add("hidden");
+                }
+            }
+        </script>
+
+
+        <!-- External Scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
