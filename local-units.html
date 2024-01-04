@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BCHC: Local Units </title>
+        <link rel="stylesheet" href="./assets/css/main.css" />
+    </head>
+    <style>
+        div.header {
+            background-image: url("./assets/images/header.jpg");
+        }
+    </style>
+    <body class="bg-body-background h-fit">
+        <header>
+            <!-- Heading Text -->
+            <h1 class="text-white text-4xl lg:text-6xl py-10 h-fit w-full text-center font-serif"> Backcountry Horsemen of California</h1>
+
+            <!-- Heading Image -->
+            <div class="header w-full h-[240px] lg:h-[480px]"></div>
+
+            <!-- Navigation Bar -->
+            <nav class="hidden lg:flex flex-col h-fit w-fit divide-y divide-black text-lg text-right absolute top-0 right-0">
+                <a href="./index.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Home </a>
+                <a href="./about-us.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> About Us </a>
+                <a href="./bchc-forms.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> BCHC Forms </a>
+                <a href="./bchc-offical-documents-and-policies.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> BCHC Official Documents <br> and Politices</a>
+                <a href="./backcountry-newsletter.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Backcountry Newsletter </a>
+                <a href="./educational-resources.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Educational Resources </a>
+                <a href="./grants.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Grants </a>
+                <a href="./intern-programs.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Intern Programs </a>
+                <a href="./leave-no-trace.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Leave No Trace </a>
+                <a href="./links.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Links </a>
+                <a href="./local-units.html" class="text-black bg-gray-300 bg-opacity-80 py-1 px-3 hover:bg-body-background hover:text-gray-300"> Local Units </a>
+                <a href="./membership.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Membership </a>
+                <a href="./public-lands.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Public Lands </a>
+                <a href="./rendezvous.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Rendezvous </a>
+                <a href="./saw-program.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Saw Program </a>
+                <a href="./volunteer-service-hours.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Volunteer Service Hours </a>
+                <a href="./wilderness-riders.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Wilderness Riders </a>
+                <a href="./youth-program.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Youth Program </a>
+                <a href="./photo-album.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Photo Album </a>
+                <a href="./contact-us.html" class="text-orange-text bg-body-background bg-opacity-80 py-1 px-3 hover:text-body-background hover:bg-gray-300"> Contact Us </a>
+            </nav>
+
+            <!-- Small Device Nav Bar -->
+            <nav class="lg:hidden flex flex-col items-center justify-center py-8">
+                <button onclick="toggleDropdown('navigation');" class="w-full h-full px-10 text-white text-5xl" title="View navigation">
+                    <ion-icon name="menu-outline"></ionicon>
+                </button>
+                <ul id="navigationcontent" class="hidden flex-col text-center md:text-2xl text-lg text-orange-text w-full">
+                    <a href="./index.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Home </a>
+                    <a href="./about-us.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> About Us </a>
+                    <a href="./bchc-forms.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> BCHC Forms </a>
+                    <a href="./bchc-offical-documents-and-policies.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> BCHC Official Documents and Politices</a>
+                    <a href="./backcountry-newsletter.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Backcountry Newsletter </a>
+                    <a href="./educational-resources.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Educational Resources </a>
+                    <a href="./grants.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Grants </a>
+                    <a href="./intern-programs.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Intern Programs </a>
+                    <a href="./leave-no-trace.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Leave No Trace </a>
+                    <a href="./links.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Links </a>
+                    <a href="./local-units.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Local Units </a>
+                    <a href="./membership.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Membership </a>
+                    <a href="./public-lands.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Public Lands </a>
+                    <a href="./rendezvous.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Rendezvous </a>
+                    <a href="./saw-program.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Saw Program </a>
+                    <a href="./volunteer-service-hours.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Volunteer Service Hours </a>
+                    <a href="./wilderness-riders.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Wilderness Riders </a>
+                    <a href="./youth-program.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Youth Program </a>
+                    <a href="./photo-album.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Photo Album </a>
+                    <a href="./contact-us.html" class="py-2 hover:bg-gray-300 hover:bg-opacity-80 hover:text-black"> Contact Us </a>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Page Content -->
+        <div class="h-fit w-full">
+
+            <!-- Logo and Header -->
+            <!-- <div class="flex flex-col w-full h-fit lg:pt-10 justify-center items-center"> -->
+            <!--     <img class="px-4 h-[110px] lg:h-[200px] rounded-md" src="./assets/images/logos/HorsesLogoINVERTED.jpg" alt="BCHCalifornia Logo"> -->
+            <!-- </div> -->
+
+            <div class="w-full flex flex-col items-center text-center px-4 lg:px-0 py-16">
+                <h1 class="text-3xl md:text-4xl lg:text-4xl px-4 text-white font-semibold">Local Units</h1>
+                <p class="text-white text-2xl py-3"> All BCHC units are members of <br><a href="https://www.bcha.org/" target="_blank" class="underline hover:text-blue-300">Back Country Horsemen of America</a></p>
+
+            <!-- Unit Map & Unit list -->
+            <div class="w-full flex flex-col items-center text-left justify-center">
+                <img src="./assets/images/UnitMap.png" class="p-4 lg:px-0" alt="Map of BCHC units.">
+                <p class="text-white text-2xl py-3">Click on a unit name for resources.</p>
+
+                <!-- Antelope Valley Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub1');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub1arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Antelope Valley Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub1content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>P O Box 84, Pearblossom, CA 93553</li>
+                            <li><a target="_blank" href="http://www.bchc-avunit.org/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/groups/328687220552083/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Eastern Sierra Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub2');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub2arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Eastern Sierra Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub2content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>17 Unit B Sunny Slope Road Tom’s Place, CA 93546</li>
+                            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100080616061933&mibextid=2JQ9oc" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- High Country Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub3');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub3arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        High Country Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub3content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 270065, Susanville, California 96127-0002</li>
+                            <li><a target="_blank" href="https://www.facebook.com/groups/170146466736818/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- High Sierra Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub4');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub4arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        High Sierra Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub4content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>P O Box 6632, Visalia, CA 93290</li>
+                            <li><a target="_blank" href="https://m.facebook.com/groups/247379905682936/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Kern River Valley Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub5');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub5arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Kern River Valley Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub5content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>C/O Larry Cigainero, 3561 Jeffrey Street Lake Isabella, CA 93240</li>
+                            <!-- Might have more, still waiting -->
+                        </ul>
+                    </div>
+                </div>
+                <!-- Kern Sierra Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub6');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub6arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Kern Sierra Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub6content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>16347 Stephenie Rd, Bakersfield, CA 93314-9669</li>
+                            <li><a target="_blank" href="https://bchckernsierra.com/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/Kernsierra/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Lake-Mendo Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub7');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub7arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Lake-Mendo Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub7content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 1674, Lakeport, CA 95453</li>
+                            <li><a target="_blank" href="https://www.facebook.com/people/Backcountry-Horsemen-of-California-LakeMendo-Unit/100064754646787/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Los Padres Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub8');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub8arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Los Padres Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub8content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>7395 El Camino Rd #472, Atascadero, CA 93422</li>
+                            <li><a target="_blank" href="https://www.facebook.com/bchclp/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Manzanita Riders Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub9');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub9arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Manzanita Riders Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub9content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>1124 3rd Street, Ramona, CA 92065</li>
+                            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100064843023988&mibextid=2JQ9oc" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Mid Valley Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub10');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub10arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Mid Valley Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub10content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 1709, Modesto, CA 95353-1709</li>
+                            <li><a target="_blank" href="http://www.bchcmidvalley.org/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/BCHCMV" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Mother Lode Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub11');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub11arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Mother Lode Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub11content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 2088, Elk Grove 95759-2088</li>
+                            <li><a target="_blank" href="https://bchcmlu.org/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/bchcamotherlode/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- North Bay Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub12');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub12arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        North Bay Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub12content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>P.O. Box 9435, Santa Rosa, CA 95405</li>
+                            <li><a target="_blank" href="https://northbayunit.com/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/NorthBayUnit?mibextid=2JQ9oc" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Pacific Crest Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub13');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub13arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Pacific Crest Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub13content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 290786, Phelan, CA 92329</li>
+                            <li><a target="_blank" href="https://www.facebook.com/groups/BackCountryHorsemenofCaliforniaPacificCrest/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Redshank Riders Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub14');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub14arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Redshank Riders Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub14content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 383, Aguanga, CA 92536-0383</li>
+                            <li><a target="_blank" href="http://www.redshankriders.com/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/groups/bchc.rsr/?ref=share&mibextid=I6gGtw" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Redwood Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub15');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub15arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Redwood Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub15content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 6023, Eureka, CA 95502-6023</li>
+                            <li><a target="_blank" href="http://www.redwoodunit.com/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/pages/Backcountry-Horsemen-of-California-Redwood-Unit/100238493731" class="underline hover:text-blue-300">Facebook</a></li>
+                            <li><a target="_blank" href="https://www.instagram.com/backcountryhorsemen_redwood/" class="underline hover:text-blue-300">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- San Joqauin Sierra Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub16');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub16arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        San Joqauin Sierra Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub16content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 25693, Fresno, CA 93729-5693</li>
+                            <li><a target="_blank" href="http://bchcsjsu.org/index.html" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/groups/294724770580446/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Santa Ana River Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub17');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub17arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Santa Ana River Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub17content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>P.O. Box 306, Norco, CA 92860</li>
+                            <li><a target="_blank" href="http://www.sarubchc.org/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/BackcountryHorsemanSantaAnaRiverUnit?ref=stream" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sequoia Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub18');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub18arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Sequoia Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub18content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 456, Springville, CA 93265</li>
+                            <li><a target="_blank" href="https://www.facebook.com/profile.php?id=100071306436069" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Shasta Trinity Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub22');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub22arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Shasta Trinity Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub22content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>20633 Gas Point Rd, Ste. B2, #48, Cottonwood, CA. 96022</li>
+                            <li><a target="_blank" href="http://www.bchcshastatrinity.org/index.html" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/BCHCshastatrinity" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sierra Freepackers Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub19');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub19arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Sierra Freepackers Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub19content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 64, Oakhurst, CA 93644-0064</li>
+                            <li><a target="_blank" href="http://www.sierrafreepackers.com/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fgroups%2F598387910171551%2F" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Sutter Buttes Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub20');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub20arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Sutter Buttes Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub20content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>P.O. Box 703, Chico, CA 95927</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Top of the State Unit -->
+                <div class="w-2/5 flex flex-col border border-tuscan rounded-md my-2">
+                    <!-- Button -->
+                    <button onclick="toggleDropdown('unitsub21');" class="flex items-center text-left text-2xl md:text-3xl lg:text-3xl bg-tuscan text-black p-2 rounded-md">
+                        <ion-icon id="unitsub21arrow" class="mr-3" name="caret-forward-outline"></ion-icon>
+                        Top of the State Unit
+                    </button>
+                    <!-- Content -->
+                    <div id="unitsub21content" class="hidden flex-col text-lg md:text-xl lg:text-xl px-4 py-2">
+                        <ul class="py-1">
+                            <li>PO Box 461, Etna, CA 96027-0461</li>
+                            <li><a target="_blank" href="https://www.tos-bchc.com/" class="underline hover:text-blue-300">Website</a></li>
+                            <li><a target="_blank" href="https://www.facebook.com/bchctopofthestate/" class="underline hover:text-blue-300">Facebook</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Footer -->
+        <footer class="w-full h-fit mt-20">
+            <!-- Info Boxes -->
+            <div class="flex h-fit lg:h-[275px] flex-col lg:flex-row items-center lg:justify-evenly">
+                <!-- Info Box One -->
+                <div class="lg:h-full my-4 lg:my-0 w-4/5 lg:w-1/5 border border-white text-white p-5">
+                    <h1 class="md:text-3xl text-2xl font-semibold"> Backcountry Horsemen of California</h1>
+                    <p class="py-3 md:text-xl text-lg">To improve and promote the use, care and development of California backcountry trails and campsites, and to advocate good trail manners.</p>
+                    <div class="flex items-center w-full">
+                        <a href="./membership.html">
+                            <button class="md:text-xl text-lg bg-orange-text px-3 py-1.5 rounded-md">
+                                Join Now 
+                            </button>
+                        </a>
+                        <a class="md:text-3xl text-2xl px-3 ml-auto" href="https://www.instagram.com/backcountry_horsemen_of_ca/" target="_blank" title="View our Instgram">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a class="md:text-3xl text-2xl mr-5" href="https://www.facebook.com/BackcountryHorsemenofCalifornia/" target="_blank" title="View our FaceBook">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Info Box Two -->
+                <div class="lg:h-full my-4 lg:my-0 w-4/5 lg:w-1/5 border border-white text-white p-5">
+                    <h1 class="md:text-3xl text-2xl font-semibold">California Non-Profit</h1>
+                    <p class="py-4 md:text-xl text-lg">BCHC Education Fund, Inc. is a 501C3 charitable organization. Donations to this fund are tax deductible and greatly appreciated.</p>
+                    <a href="./not-found.html">
+                        <button class="md:text-xl text-lg bg-orange-text px-3 py-1.5 rounded-md mt-6">
+                            Donate
+                        </button>
+                    </a>
+                </div>
+            </div>
+
+            <img class="h-[150px] md:h-[175px] lg:h-[250px] mx-auto lg:mt-10" src="./assets/images/logos/Footer.png">
+
+        </footer>
+
+        <script>
+            function toggleDropdown (id) {
+                const content = document.getElementById(id + "content");
+                const arrow = document.getElementById(id + "arrow");
+
+                arrow != null ? arrow.classList.contains("rotate-90") ? arrow.classList.remove("rotate-90") : arrow.classList.add("rotate-90") : "";
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                    content.classList.add("flex");
+                } else {
+                    content.classList.remove("flex");
+                    content.classList.add("hidden");
+                }
+            }
+        </script>
+
+
+        <!-- External Scripts -->
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    </body>
+</html>
