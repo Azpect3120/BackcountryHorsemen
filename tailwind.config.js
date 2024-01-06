@@ -10,7 +10,7 @@ module.exports = {
         "yellow-text": "#faf20a",
         "almond": "#EED9C4",
         "tuscan": "#FAD6A5",
-        "meadow": "#699445",
+        "meadow": "#7ccf0f",
         "forest": "#326309"
       },
     },

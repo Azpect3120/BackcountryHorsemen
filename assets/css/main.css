@@ -762,7 +762,7 @@ video {
 
 .bg-meadow {
   --tw-bg-opacity: 1;
-  background-color: rgb(105 148 69 / var(--tw-bg-opacity));
+  background-color: rgb(124 207 15 / var(--tw-bg-opacity));
 }
 
 .bg-orange-text {
@@ -982,7 +982,7 @@ video {
 
 .text-meadow {
   --tw-text-opacity: 1;
-  color: rgb(105 148 69 / var(--tw-text-opacity));
+  color: rgb(124 207 15 / var(--tw-text-opacity));
 }
 
 .text-orange-text {
