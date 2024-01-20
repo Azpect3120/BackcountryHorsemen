@@ -658,6 +658,10 @@ video {
   height: 100%;
 }
 
+.h-\[275px\] {
+  height: 275px;
+}
+
 .w-1\/2 {
   width: 50%;
 }
@@ -672,6 +676,10 @@ video {
 
 .w-\[250px\] {
   width: 250px;
+}
+
+.w-\[300px\] {
+  width: 300px;
 }
 
 .w-\[363px\] {
@@ -693,6 +701,10 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-\[350px\] {
+  width: 350px;
 }
 
 .rotate-90 {
