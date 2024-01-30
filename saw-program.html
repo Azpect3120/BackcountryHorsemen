@@ -313,6 +313,22 @@
 
         </footer>
 
+        <script>
+            function toggleDropdown (id) {
+                const content = document.getElementById(id + "content");
+                const arrow = document.getElementById(id + "arrow");
+
+                arrow != null ? arrow.classList.contains("rotate-90") ? arrow.classList.remove("rotate-90") : arrow.classList.add("rotate-90") : "";
+                if (content.classList.contains("hidden")) {
+                    content.classList.remove("hidden");
+                    content.classList.add("flex");
+                } else {
+                    content.classList.remove("flex");
+                    content.classList.add("hidden");
+                }
+            }
+        </script>
+
         <!-- External Scripts -->
         <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
         <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
