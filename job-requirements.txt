@@ -1,0 +1,14 @@
+Basic Requirements
+--------------------------------
+- Intermediate HTML and CSS knowledge
+- Good understanding of Tailwind CSS (it's very easy to learn if you know CSS)
+- Basic JavaScipt skills
+- Have a decent knowledge of the web
+
+Detailed Requirements
+--------------------------------
+- Know how to read and write HTML files to update the webpage
+- Know how to read and write Tailwind CSS classes to make style changes to the webpage
+- Know how to use Tailwind CSS to create a responsive design for all platforms
+- Understand how to manipulate the DOM using JavaScript
+- Understand the hosting steps and how to update the site in the Hostinger hosting platform
