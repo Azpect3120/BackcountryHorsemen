@@ -1310,6 +1310,14 @@ video {
     width: 100%;
   }
 
+  .md\:w-\[45\%\] {
+    width: 45%;
+  }
+
+  .md\:w-\[90\%\] {
+    width: 90%;
+  }
+
   .md\:flex-row {
     flex-direction: row;
   }
@@ -1474,6 +1482,10 @@ video {
 
   .lg\:w-\[960px\] {
     width: 960px;
+  }
+
+  .lg\:w-\[45\%\] {
+    width: 45%;
   }
 
   .lg\:flex-row {
