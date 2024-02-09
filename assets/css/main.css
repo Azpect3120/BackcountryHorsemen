@@ -1540,6 +1540,10 @@ video {
     width: 100%;
   }
 
+  .lg\:w-3\/12 {
+    width: 25%;
+  }
+
   .lg\:flex-row {
     flex-direction: row;
   }
