@@ -13,6 +13,10 @@ module.exports = {
         "meadow": "#7ccf0f",
         "forest": "#326309"
       },
+      backgroundImage: {
+        'full-size': "url('./assets/images/header.jpg')",
+
+      }
     },
     fontFamily: {
       serif: ["Georgia", "ui-serif"],
