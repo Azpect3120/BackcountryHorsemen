@@ -5,12 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BCHC: Membership </title>
     <link rel="stylesheet" href="./assets/css/main.css" />
+    <style>
+    div.header {
+      @media (min-width: 500px) {
+        background-image: url("./assets/images/header.jpg");
+      }
+
+      @media (max-width: 499px) {
+        background-image: url("./assets/images/PackStringsOnSwitchback.jpg");
+        background-size: cover;
+        background-position: center;
+      }
+    }
+    </style>
   </head>
-  <style>
-  div.header {
-    background-image: url("./assets/images/header.jpg");
-  }
-  </style>
   <body id="top" class="bg-body-background h-fit">
     <header>
       <!-- Heading Text -->
