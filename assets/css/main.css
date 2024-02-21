@@ -1433,6 +1433,11 @@ video {
     padding-bottom: 1.5rem;
   }
 
+  .md\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+
   .md\:text-left {
     text-align: left;
   }
@@ -1627,6 +1632,11 @@ video {
   .lg\:py-60 {
     padding-top: 15rem;
     padding-bottom: 15rem;
+  }
+
+  .lg\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
   }
 
   .lg\:pt-10 {
