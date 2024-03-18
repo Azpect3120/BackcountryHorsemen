@@ -1,0 +1,54 @@
+{
+  "suggestions": {
+    "linksOpenNewTab": true
+  },
+  "style": {
+    "searchBox": {
+      "background": {
+        "color": "#FFFFFF"
+      },
+      "border": {
+        "radius": "3px",
+        "color": "#DDDDDD"
+      },
+      "text": {
+        "size": "14px"
+      },
+      "icon": {
+        "image": "",
+        "color": "#666666"
+      },
+      "button": {
+        "icon": {
+          "color": "#FFFFFF",
+          "image": "magnifier"
+        },
+        "textColor": "#FFFFFF",
+        "text": "Search"
+      }
+    }
+  },
+  "searchBox": {
+    "inject": true,
+    "injectTo": ".search-bar",
+    "placeholder": "Search…"
+  },
+  "results": {
+    "embedConfig": {
+      "contentBlock": "main"
+    },
+    "group": false,
+    "linksOpenNewTab": true,
+    "infiniteScroll": true,
+    "integrationType": "layover"
+  },
+  "queryTerm": {
+    "highlightMatchedContent": true
+  },
+  "layout": {
+    "navigation": {
+      "flatTabs": true
+    }
+  },
+  "siteId": "www.bchcalifornia.org"
+}

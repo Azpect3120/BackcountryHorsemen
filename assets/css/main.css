@@ -692,6 +692,10 @@ video {
   display: grid;
 }
 
+.contents {
+  display: contents;
+}
+
 .hidden {
   display: none;
 }
@@ -957,11 +961,6 @@ video {
 .bg-meadow {
   --tw-bg-opacity: 1;
   background-color: rgb(124 207 15 / var(--tw-bg-opacity));
-}
-
-.bg-red-500 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
 }
 
 .bg-tuscan {
@@ -1339,10 +1338,6 @@ video {
 
   .sm\:w-\[95\%\] {
     width: 95%;
-  }
-
-  .sm\:items-center {
-    align-items: center;
   }
 }
 
