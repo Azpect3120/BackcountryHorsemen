@@ -959,6 +959,11 @@ video {
   background-color: rgb(124 207 15 / var(--tw-bg-opacity));
 }
 
+.bg-red-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(239 68 68 / var(--tw-bg-opacity));
+}
+
 .bg-tuscan {
   --tw-bg-opacity: 1;
   background-color: rgb(250 214 165 / var(--tw-bg-opacity));
@@ -1334,6 +1339,10 @@ video {
 
   .sm\:w-\[95\%\] {
     width: 95%;
+  }
+
+  .sm\:items-center {
+    align-items: center;
   }
 }
 
