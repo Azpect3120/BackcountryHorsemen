@@ -3,20 +3,15 @@
     "linksOpenNewTab": true
   },
   "style": {
+    "accentColor": "#7ccf0f",
     "searchBox": {
-      "background": {
-        "color": "#FFFFFF"
-      },
       "border": {
-        "radius": "3px",
-        "color": "#DDDDDD"
-      },
-      "text": {
-        "size": "14px"
+        "radius": "5px",
+        "color": "#7ccf0f"
       },
       "icon": {
-        "image": "",
-        "color": "#666666"
+        "color": "#666666",
+        "image": ""
       },
       "button": {
         "icon": {
@@ -25,13 +20,20 @@
         },
         "textColor": "#FFFFFF",
         "text": "Search"
+      },
+      "text": {
+        "size": "16px",
+        "color": "#FFFFFF"
+      },
+      "background": {
+        "color": "#171616"
       }
     }
   },
   "searchBox": {
     "inject": true,
     "injectTo": ".search-bar",
-    "placeholder": "Search…"
+    "placeholder": "Search bchcalifornia.org…"
   },
   "results": {
     "embedConfig": {
