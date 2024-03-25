@@ -1,0 +1,9 @@
+This app was built using HTML5 and Tailwind CSS.
+
+To use tailwind you can find a TailWind executable in the files, but this one will only run on linux based systems.
+If you are using windows you can install tailwind from their site.
+
+https://tailwindcss.com/docs/installation
+
+Anything you need to know about tailwind can also be found on their site. It is very simple once you get the hang of it!
+The files are found in the ./assets/css/ folder.
